@@ -1,0 +1,73 @@
+#skillset > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 1rem;
+    /* grid es el estilo principal cuando estás haciendo
+    mallas o cuadriculas */
+
+    /* nota importante: el selector > se asegura 
+    de apuntar a solo los divs que son hijos
+    directos del skillset.
+    
+    cuando estás sin selector y solo dejas un espacio
+    apunta a todos los hijos div incluyendo nietos
+    y bisnietos etc*/
+}
+
+#skillset img {
+    border-radius: 1rem;
+    max-width: 7rem;
+    cursor: context-menu;
+}
+
+#skillset > div > div {
+    position: relative;
+
+}
+
+#skillset span{
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: 50%;
+    transform: translate(-60px, 10px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    /* pointer events none hace que el elemento en este caso 
+    tooltip no interfiera con el elemento debajo de el, como si fuera
+    transparente */
+    /* el elemento no va a interferir con el cursor */
+
+}
+
+#skillset > div > div:hover span{
+    /* añade estos estilos al elemento span cuando ponga 
+    el cursor encima del elemento div que es hijo de otro 
+    elemento div que es hijo del elemento skillset */
+    opacity: 1;
+    transform: translate(-60px, 0px);
+
+}
+
+#skillset span:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+
+
+
+}
+
+

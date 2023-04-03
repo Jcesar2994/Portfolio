@@ -1,0 +1,23 @@
+header{
+    padding: 5rem 0 3rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(var(--black), var(--black2));
+}
+
+header video{
+    position: absolute;
+    /* la posición absoluta es relativa al body y rompe el flujo */
+    /* la posicion relativa es relativa a si misma */
+    top: 50%;
+    left: 50%;
+    /* 50% de la parte superior y de la izquierda */
+    transform: translate(-50%, -50%);
+    /* lo mueve 50%hacia la izquierda y 50% hacia arriba */
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.2;
+    /* el video es el que es un poco transparente */
+
+    /* lo que se ve es un video transparente con un fondo negro */
+}

@@ -1,0 +1,42 @@
+html{
+    background: linear-gradient(var(--white), var(--white2));
+}
+
+section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+#navbar, section.even{
+
+    background: linear-gradient(var(--primary),var(--primary-dark));
+    /* Significa que se ha creado un fondo para esas secciones con un pequeño gradiente
+    que va desde azul hasta un azul un poco más oscuro */
+
+}
+
+footer{
+    background: linear-gradient(var(--black), var(--black2));
+    padding: 2rem 0;
+    /* El em es relativo al tamaño de fuente del padre directo o más cercano mientras que rem es relativo al tamaño de fuente de la raiz html, no el body. */
+    /* 2rem en la parte superior y cero a los lados */
+}
+
+hr{
+    height: 0.1rem;
+    max-width: 100%;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0 ,0, 0, 0), var(--primary), rgba(0, 0, 0, 0));
+    /* la linear horizontal va desde transparente luego color y luego transparente de nuevo */
+
+}
+
+section.even hr{
+    background-image: linear-gradient(to right, rgba(0 ,0, 0, 0), var(--white), rgba(0, 0, 0, 0));
+}
+
+section hr{
+    margin-bottom: 5rem;
+
+}
