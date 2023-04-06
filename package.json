@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "mi portafolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jcesar2994/Portfolio.git"
+  },
+  "author": "Julio César Vázquez García",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jcesar2994/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Jcesar2994/Portfolio#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
