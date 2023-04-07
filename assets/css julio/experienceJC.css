@@ -20,6 +20,7 @@
     position: relative;
     margin: 1rem auto;
     border: none;
+    background: white;
 }
 
 #experience img:hover {
