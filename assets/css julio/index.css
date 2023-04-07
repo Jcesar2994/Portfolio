@@ -1,0 +1,13 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./mainJC.css";
+@import "./fontsJC.css";
+@import "./utilsJC.css";
+@import "./sectionsJC.css";
+@import "./headerJC.css";
+@import "./navJC.css";
+@import "./portfolioJC.css";
+@import "./skillsetJC.css";
+@import "./experienceJC.css";
+@import "./contactJC.css";
+@import "../../node_modules/eins-modal/dist/css/eins-modal.min.css";
+
