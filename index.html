@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">   
-
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,14 +123,19 @@
             <h3>Experience</h3>
             <hr>
             <div>
-                <a>
+                <button data-modal-id="myModal">
                     <img src="/assets/img/experience/1.svg" alt="expererience1">
-                    <h4>place I've worked 1</h4>
-                </a>
+                    <h4>Secretaría de Comunicaciones y Transportes, Centro SCT Veracruz <br>
+                        Área: Contratos y Estimaciones <br>
+                        Puesto: Servicio social
+                    </h4>
+                </button>
+               
                 <a>
                     <img src="/assets/img/experience/2.svg" alt="expererience2">
-                    <h4>place I've worked 2</h4>
+                    <h4>Place I've worked 2</h4>
                 </a>
+            
                 <a>
                     <img src="/assets/img/experience/3.svg" alt="expererience3">
                     <h4>place I've worked 3</h4>
@@ -147,7 +152,7 @@
             </div>
         </section>
 
-        <section id="contact"   class="even">
+        <section id="contact" class="even">
             <h3>Contact</h3>
             <hr>
             <form action="https://formspree.io/f/{form_id}" method="post">
@@ -180,7 +185,25 @@
     <footer>
         <small>Developed and Designed by Julio César Vázquez García. &copy; 2023. All rights reserved.</small>
     </footer>
+
+
+<!-- Modal -->
+<div id="myModal" class="eins-modal">
+  <div class="eins-modal-content">
+    <div class="eins-modal-close"></div>
+
+    Actividades realizadas: Revisión de cierres administrativos <br>
+    Revisión de programas de obra <br>
+    Revisión de estimaciones de obra <br>
+
+    
+    <button class="eins-modal-close-button">OK</button>
+  </div>
+</div>
+
+
     <script src="assets/JS/main.js"></script>
     <script src="assets/JS/fixed.js"></script>
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>
